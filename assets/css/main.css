@@ -2758,6 +2758,26 @@
 
 	}
 
+/* Panel */
+.panel a {
+	-moz-transition: color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out;
+	-ms-transition: color 0.2s ease-in-out;
+	transition: color 0.2s ease-in-out;
+	display: inline-block;
+	padding: 0 2em;
+	color: black;
+	text-decoration: none;	
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: .85em;
+	left: 2em;
+}
+
+.panel a:hover {
+	color: rgba(107,107,107,0.80);
+}
+
 /* Menu */
 
 	#nav {
