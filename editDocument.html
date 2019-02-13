@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link href='https://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body>
@@ -25,17 +26,108 @@
 				</div>
 			</header>
 			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-			<main>
+			<section>
+				<div class="inner">
+					<nav class="panel">
+						<div class="dropdown">
+							<a class="button altMenu dropbtn" id="editMenu">Редактирование 
+								<i class="fa fa-caret-down"></i>
+							  </a>
+							  <div class="dropdown-content">
+								<a href="#">Link 1</a>
+								<a href="#">Link 2</a>
+								<a href="#">Link 3</a>
+							  </div>							
+						</div>
+						<div class="dropdown">
+							<a class="button altMenu dropbtn" id="insertMenu">Вставка 
+								<i class="fa fa-caret-down"></i>
+							  </a>
+							  <div class="dropdown-content">
+								<a href="#">Link 1</a>
+								<a href="#">Link 2</a>
+								<a href="#">Link 3</a>
+							  </div>
+						  </div> 
+						  <div class="dropdown">
+							<a class="button altMenu dropbtn" id="layoutMenu">Формат 
+								<i class="fa fa-caret-down"></i>
+							  </a>
+							  <div class="dropdown-content">
+								<a href="#">Link 1</a>
+								<a href="#">Link 2</a>
+								<a href="#">Link 3</a>
+							  </div>
+						  </div> 
+						  <div class="dropdown">
+							<a class="button altMenu dropbtn" id="linkMenu">Ссылки 
+								<i class="fa fa-caret-down"></i>
+							  </a>
+							  <div class="dropdown-content">
+								<a href="#">Link 1</a>
+								<a href="#">Link 2</a>
+								<a href="#">Link 3</a>
+							  </div>
+						  </div> 
+						  <div class="dropdown">
+							<a class="button altMenu dropbtn" id="reviewMenu">Рецензирование 
+								<i class="fa fa-caret-down"></i>
+							  </a>
+							  <div class="dropdown-content">
+								<a href="#">Link 1</a>
+								<a href="#">Link 2</a>
+								<a href="#">Link 3</a>
+							  </div>
+						  </div> 								  	
+						  <div class="dropdown">
+							<a class="button altMenu dropbtn" id="viewMenu">Вид 
+								<i class="fa fa-caret-down"></i>
+							  </a>
+							  <div class="dropdown-content">
+								<a href="#">Link 1</a>
+								<a href="#">Link 2</a>
+								<a href="#">Link 3</a>
+							  </div>
+						  </div> 						  					  						  
+					</nav>
+				</div>
+			</section>
+			<section>
+				<div class="inner">
+					<nav class="panel">
+						<a class="button altMenu" href="#"><i class="fa fa-font"></i></a> 
+						<a class="button altMenu" href="#"><i class="fa fa-bold"></i></a> 
+						<a class="button altMenu" href="#"><i class="fa fa-italic"></i></a> 
+						<a class="button altMenu" href="#"><i class="fa fa-underline"></i></a>
+						<a class="button altMenu" href="#"><i class="fa fa-list-ol"></i></a> 
+						<a class="button altMenu" href="#"><i class="fa fa-list-ul"></i></a> 
+						<a class="button altMenu" href="#"><i class="fa fa-align-left"></i></a> 
+						<a class="button altMenu" href="#"><i class="fa fa-align-center"></i></a> 
+						<a class="button altMenu" href="#"><i class="fa fa-align-right"></i></a> 
+						<a class="button altMenu" href="#"><i class="fa fa-align-justify"></i></a> 
+						<a class="button altMenu" href="#"><i class="fa fa-image"></i></a> 
+					</nav>
+				</div>
+			</section>
+			  <section>
+					<div class="inner">
+							<textarea name="" id="textEditor" rows="15" cols="10"></textarea>
 
-				
-			</main>
-
-
+					</div>
+				</section>
+				<br>
+				<section id="footer">
+					<div class="inner">
+							<h6>Toolbar</h6>
+					</div>
+				</section>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/navPanel.js"></script>
+
 
 	</body>
 </html>
