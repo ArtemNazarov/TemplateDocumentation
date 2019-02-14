@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link href='https://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body>
@@ -34,9 +34,11 @@
 								<i class="fa fa-caret-down"></i>
 							  </a>
 							  <div class="dropdown-content">
-								<a href="#">Link 1</a>
-								<a href="#">Link 2</a>
-								<a href="#">Link 3</a>
+								<a href="#"><i class="fa fa-undo"></i> Отменить</a>
+								<a href="#"><i class="fa fa-redo"></i> Повторить</a>
+								<a href="#"><i class="fa fa-cut"></i> Вырезать</a>
+								<a href="#"><i class="fa fa-copy"></i>	 Скопировать</a>
+								<a href="#"><i class="fa fa-paste"></i> Вставить</a>
 							  </div>							
 						</div>
 						<div class="dropdown">
@@ -44,9 +46,9 @@
 								<i class="fa fa-caret-down"></i>
 							  </a>
 							  <div class="dropdown-content">
-								<a href="#">Link 1</a>
-								<a href="#">Link 2</a>
-								<a href="#">Link 3</a>
+								<a href="#" ><i class="fa fa-image"></i>		 Изображение</a>
+								<a href="#"><i class="fa fa-table"></i>	 Таблица</a>
+								<a href="#"><i class="fa fa-chart-bar"></i>	Диаграмма</a>
 							  </div>
 						  </div> 
 						  <div class="dropdown">
@@ -54,31 +56,12 @@
 								<i class="fa fa-caret-down"></i>
 							  </a>
 							  <div class="dropdown-content">
-								<a href="#">Link 1</a>
-								<a href="#">Link 2</a>
-								<a href="#">Link 3</a>
+								<a href="#"><i class="fa fa-bold"></i> Жирный</a>
+								<a href="#"><i class="fa fa-italic"></i> Курсив</a>
+								<a href="#"><i class="fa fa-underline"></i> Подчёркнутый</a>
 							  </div>
 						  </div> 
-						  <div class="dropdown">
-							<a class="button altMenu dropbtn" id="linkMenu">Ссылки 
-								<i class="fa fa-caret-down"></i>
-							  </a>
-							  <div class="dropdown-content">
-								<a href="#">Link 1</a>
-								<a href="#">Link 2</a>
-								<a href="#">Link 3</a>
-							  </div>
-						  </div> 
-						  <div class="dropdown">
-							<a class="button altMenu dropbtn" id="reviewMenu">Рецензирование 
-								<i class="fa fa-caret-down"></i>
-							  </a>
-							  <div class="dropdown-content">
-								<a href="#">Link 1</a>
-								<a href="#">Link 2</a>
-								<a href="#">Link 3</a>
-							  </div>
-						  </div> 								  	
+				  	
 						  <div class="dropdown">
 							<a class="button altMenu dropbtn" id="viewMenu">Вид 
 								<i class="fa fa-caret-down"></i>
@@ -92,7 +75,7 @@
 					</nav>
 				</div>
 			</section>
-			<section>
+			<section id="toolbarSection">
 				<div class="inner">
 					<nav class="panel">
 						<a class="button altMenu" href="#"><i class="fa fa-font"></i></a> 
@@ -105,22 +88,73 @@
 						<a class="button altMenu" href="#"><i class="fa fa-align-center"></i></a> 
 						<a class="button altMenu" href="#"><i class="fa fa-align-right"></i></a> 
 						<a class="button altMenu" href="#"><i class="fa fa-align-justify"></i></a> 
-						<a class="button altMenu" href="#"><i class="fa fa-image"></i></a> 
+						<a class="button altMenu" href="#"><i class="fa fa-image"></i></a>
 					</nav>
 				</div>
 			</section>
-			  <section>
-					<div class="inner">
-							<textarea name="" id="textEditor" rows="15" cols="10"></textarea>
+			<section id="editSection">
+				<div class="inner">
+						<!-- <div>
+							<textarea name="" id="" cols="30" rows="10"></textarea>
+						</div>
+						<div>
+								<textarea name="" id="" cols="30" rows="10"></textarea>
+						</div>
+						<div>
+							<textarea name="" id="" cols="30" rows="10"></textarea>
+						</div>
+						<div>
 
-					</div>
-				</section>
-				<br>
-				<section id="footer">
-					<div class="inner">
-							<h6>Toolbar</h6>
-					</div>
-				</section>
+							<textarea name="" id="" cols="30" rows="10"></textarea>
+						</div>
+						<div>
+							<textarea name="" id="" cols="30" rows="10"></textarea>
+						</div> -->
+
+						<div id="documentNavigationBlock">
+								<h5>Структура документа</h5>
+								<p></p>
+								<h3><a href="#">Блок 1</a></h3>
+								<h4><a href="#">Блок 1.1</a></h4>
+								<h5><a href="#">Блок 1.1.1</a></h5>
+								<h3><a href="#">Блок 2</a></h3>
+								<h3><a href="#">Блок 3</a></h3>
+								<h3><a href="#">Блок 4</a></h3>
+								<h3><a href="#">Блок 5</a></h3>
+						</div>
+						<div id="textEditorBlock">
+								<!-- <code id="textEditor">
+								Lorem ipsum, dolor sit amet consectetur <span id="annOne">
+									adipisicing</span> elit. Error harum mollitia nesciunt reprehenderit perferendis culpa quae expedita molestiae fugiat magni eos nobis dolores, omnis molestias ad totam, ut repudiandae odit.
+								</code> -->
+								<textarea name="" id="textEditor" rows="15">Lorem, ipsum dolor sit amet consectetur  elit. 
+									Ea sit dolore sapiente autem veritatis tempore illo. Maxime similique, sint amet quod eos consectetur. Facere officiis, obcaecati dolorum placeat accusantium aperiam.
+								</textarea>
+						</div>
+						<div id="annotationBlock">
+								<h5>Примечания</h5>
+								<p>Примечание 1</p>
+								<br>
+								<br>
+								<br>
+								<p>Примечание 2</p>
+						</div>
+						<div id="templateBlock">
+									<h5 id="templateTitle">Шаблоны</h5>
+									<p></p>
+									<h4><a href="#" class="button altMenu">Шаблон 1</a></h4>
+									<h4><a href="#" class="button altMenu">Шаблон 2</a></h4>
+	
+							</div>
+				</div>
+			</section>
+			<br>
+
+			<section id="footer">
+				<div class="inner">
+					<h5>Страница 1/2</h6>
+				</div>
+			</section>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>

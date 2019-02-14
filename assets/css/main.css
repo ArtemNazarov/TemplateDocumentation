@@ -2737,9 +2737,15 @@
 			padding: 0;
 		}
 
-		@media screen and (max-width: 480px){
+		@media all and (max-width: 640px){
 			#header .logo {
 				font-size: 1.1em;
+			}
+		}
+
+		@media all and (max-width: 320px){
+			#header .logo {
+				font-size: 0.8em;
 			}
 		}
 
@@ -3199,6 +3205,85 @@
     display: block;
   }
 
+/* Edit area */
+
+  #editSection .inner {
+	display: -ms-flexbox;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-direction: row;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	margin: 0 auto;
+	width: calc(100% - 2em);
+}
+
+#editSection .inner > div {
+	padding-top: 2em;
+}
+
+  #documentNavigationBlock {
+	flex: 1 1 auto;	
+	margin: 0 1em;
+  }
+
+  #documentNavigationPanel {
+	  height: 70em;
+  }
+
+  #textEditorBlock {
+	flex: 11 1 auto;
+	margin: 0 1em;
+}
+
   #textEditor {
 	  resize: none;
+	  height: 70em; 
+	   padding: 3em 5em;
   }
+
+  #templateBlock {
+	  margin: 0 1em;
+  }
+
+  #templateTitle{ 
+		padding: 0 2.25em;
+	}
+
+#annotationBlock {
+	flex: 1 1 auto;
+	margin: 0 1em;
+}
+
+
+
+#toolbarSection .inner {
+	display: -ms-flexbox;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-direction: row;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	/* justify-content: center */
+}
+
+
+#footer {
+	position: fixed;
+	bottom: 0;
+	left:0;
+	z-index: 10001;
+	width: calc(100% - 2em);
+}
+
+#annOne {
+	background-color: green;
+}
