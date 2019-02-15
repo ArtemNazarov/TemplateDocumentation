@@ -3260,7 +3260,10 @@
 	margin: 0 1em;
 }
 
-
+#annotationBlock p {
+	border: 1px solid aquamarine;
+	border-radius: 20px;
+}
 
 #toolbarSection .inner {
 	display: -ms-flexbox;
@@ -3275,6 +3278,10 @@
 	/* justify-content: center */
 }
 
+#toolbarSection .inner a.altMenu {
+	padding: 0.8em;
+}
+
 
 #footer {
 	position: fixed;
@@ -3287,3 +3294,4 @@
 #annOne {
 	background-color: green;
 }
+
