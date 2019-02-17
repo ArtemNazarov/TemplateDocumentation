@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link href='https://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	</head>
 	<body>
 
@@ -24,18 +25,36 @@
 					</nav>
 				</div>
 			</header>
-
-			<section>
+			<section id="menuSection">
 				<div class="inner">
 					<nav class="panel">
+							<div class="dropdown">
+									<a class="button altMenu dropbtn" id="editMenu">Файл 
+										<i class="fa fa-caret-down"></i>
+									  </a>
+									  <div class="dropdown-content">
+										<a href="#"><i class="fa fa-file"></i> Создать</a>
+										<a href="#"><i class="fa fa-file-alt"></i> Открыть</a>
+										<a href="#"><i class="fa fa-clone"></i> Создать копию</a>
+										<a href="#"><i class="fa fa-save"></i>	 Скачать как</a>
+										<a href="#"><i class="fas fa-pen"></i> Переименовать</a>
+										<a href="#"><i class="fas fa-page"></i> Настройки страницы</a>
+										<a href="#"><i class="fa fa-print"></i> Печать</a>
+
+									  </div>							
+								</div>
 						<div class="dropdown">
 							<a class="button altMenu dropbtn" id="editMenu">Редактирование 
 								<i class="fa fa-caret-down"></i>
 							  </a>
 							  <div class="dropdown-content">
-								<a href="#">Link 1</a>
-								<a href="#">Link 2</a>
-								<a href="#">Link 3</a>
+								<a href="#"><i class="fa fa-undo"></i> Отменить</a>
+								<a href="#"><i class="fa fa-redo"></i> Повторить</a>
+								<a href="#"><i class="fa fa-cut"></i> Вырезать</a>
+								<a href="#"><i class="fa fa-copy"></i>	 Скопировать</a>
+								<a href="#"><i class="fa fa-paste"></i> Вставить</a>
+								<a href="#">Выделить всё</a>
+
 							  </div>							
 						</div>
 						<div class="dropdown">
@@ -43,9 +62,11 @@
 								<i class="fa fa-caret-down"></i>
 							  </a>
 							  <div class="dropdown-content">
-								<a href="#">Link 1</a>
-								<a href="#">Link 2</a>
-								<a href="#">Link 3</a>
+								<a href="#" ><i class="fa fa-image"></i> Изображение</a>
+								<a href="#"><i class="fa fa-table"></i> Таблица</a>
+								<a href="#"><i class="far fa-comment"></i> Примечание</a>
+								<a href="#"><i class="fa fa-link"></i> Гиперссылка</a>
+
 							  </div>
 						  </div> 
 						  <div class="dropdown">
@@ -53,45 +74,94 @@
 								<i class="fa fa-caret-down"></i>
 							  </a>
 							  <div class="dropdown-content">
-								<a href="#">Link 1</a>
-								<a href="#">Link 2</a>
-								<a href="#">Link 3</a>
+								<a href="#"><i class="fas fa-bold"></i> Жирный</a>
+								<a href="#"><i class="fa fa-italic"></i> Курсив</a>
+								<a href="#"><i class="fa fa-underline"></i> Подчёркнутый</a>
 							  </div>
 						  </div> 
-						  <div class="dropdown">
-							<a class="button altMenu dropbtn" id="linkMenu">Ссылки 
-								<i class="fa fa-caret-down"></i>
-							  </a>
-							  <div class="dropdown-content">
-								<a href="#">Link 1</a>
-								<a href="#">Link 2</a>
-								<a href="#">Link 3</a>
-							  </div>
-						  </div> 
-						  <div class="dropdown">
-							<a class="button altMenu dropbtn" id="reviewMenu">Рецензирование 
-								<i class="fa fa-caret-down"></i>
-							  </a>
-							  <div class="dropdown-content">
-								<a href="#">Link 1</a>
-								<a href="#">Link 2</a>
-								<a href="#">Link 3</a>
-							  </div>
-						  </div> 								  	
+				  	
 						  <div class="dropdown">
 							<a class="button altMenu dropbtn" id="viewMenu">Вид 
 								<i class="fa fa-caret-down"></i>
 							  </a>
 							  <div class="dropdown-content">
-								<a href="#">Link 1</a>
-								<a href="#">Link 2</a>
-								<a href="#">Link 3</a>
+								<a href="#"><i class="fa fa-search"></i> Масштаб</a>
+								<a href="#" id="showNavigation"><i class="fa fa-check"></i>Показать навигацию</a>
+								<a href="#" id="showComments"><i class="fa fa-check"></i>Показать примечания</a>
+								<a href="#" id="showTemplates"><i class="fa fa-check"></i>Показать шаблоны</a>
 							  </div>
 						  </div> 						  					  						  
 					</nav>
 				</div>
 			</section>
+			<section id="toolbarSection">
+				<div class="inner">
+					<nav class="panel">
+						<a class="button altMenu" href="#"><i class="fa fa-undo"></i></a>
+						<a class="button altMenu toolbarRightBorder" href="#"><i class="fa fa-redo"></i></a>
+						<a class="button altMenu " href="#"><i class="fa fa-cut"></i></a>
+						<a class="button altMenu" href="#"><i class="fa fa-copy"></i></a>
+						<a class="button altMenu toolbarRightBorder" href="#"><i class="fa fa-paste"></i></a>
+						<div class="dropdown">
+								<a class="button altMenu dropbtn toolbarRightBorder" id="fontFamilyButton"> 
+									Arial
+									<i class="fa fa-caret-down"></i>
+								  </a>
+								  <div class="dropdown-content">
+									<a href="#" class="fontFamily">Arial</a>
+									<a href="#" class="fontFamily">Calibri</a>
+									<a href="#" class="fontFamily">Courier New</a>
+									<a href="#" class="fontFamily">Impact</a>
+									<a href="#" class="fontFamily">Verdana</a>
+								  </div>
+							  </div> 
+						<div class="dropdown">
+									<a class="button altMenu dropbtn toolbarRightBorder" id="fontSizeButton"> 
+										12
+										<i class="fa fa-caret-down"></i>
+									  </a>
+									  <div class="dropdown-content toolbar-dropdown">
+										<a href="#" class="fontSize">8</a>
+										<a href="#" class="fontSize">9</a>
+										<a href="#" class="fontSize">10</a>
+										<a href="#" class="fontSize">11</a>
+										<a href="#" class="fontSize">12</a>
+										<a href="#" class="fontSize">14</a>
+										<a href="#" class="fontSize">16</a>
+										<a href="#" class="fontSize">18</a>
+										<a href="#" class="fontSize">20</a>
+										<a href="#" class="fontSize">24</a>
+										<a href="#" class="fontSize">26</a>
+										<a href="#" class="fontSize">28</a>
+										<a href="#" class="fontSize">36</a>
+										<a href="#" class="fontSize">48</a>
+										<a href="#" class="fontSize">72</a>
+									  </div>
+								  </div> 
+						<a class="button altMenu" href="#"><i class="fa fa-bold"></i></a> 
+						<a class="button altMenu" href="#"><i class="fa fa-italic"></i></a> 
+						<a class="button altMenu toolbarRightBorder" href="#"><i class="fa fa-underline"></i></a>
+						<a class="button altMenu" href="#"><i class="fa fa-list-ol"></i> <i class="fa fa-caret-down"></i></a> 
+						<a class="button altMenu toolbarRightBorder" href="#"><i class="fa fa-list-ul"></i> <i class="fa fa-caret-down"></i></a> 
+						<a class="button altMenu " href="#"><i class="fas fa-align-left"></i></a> 
+						<a class="button altMenu" href="#"><i class="fas fa-align-center"></i></a> 
+						<a class="button altMenu" href="#"><i class="fas fa-align-right"></i></a> 
+						<a class="button altMenu toolbarRightBorder" href="#"><i class="fas fa-align-justify"></i></a> 
+						<a class="button altMenu" href="#"><i class="fas fa-text-height"></i></a> 
+						<a class="button altMenu toolbarRightBorder" href="#"><i class="fas fa-text-width"></i></a> 						
+						<a href="#" class="button altMenu"><i class="fas fa-outdent"></i></a>
+						<a href="#" class="button altMenu toolbarRightBorder"><i class="fas fa-indent"></i></a>
+						<a href="#" class="button altMenu"><i class="fa fa-table"></i></a>
+						<a class="button altMenu" href="#"><i class="fa fa-image"></i></a>
+						<a class="button altMenu" href="#"><i class="far fa-comment"></i></a>
+						<a class="button altMenu" href="#"><i class="fa fa-link"></i></a>
+						<input type="text" placeholder="Поиск..."  name="" id="searchField">
+						<a href="#" class="button altMenu"><i class="fa fa-search"></i></a>
+					</nav>
+				</div>
 
+			</section>
+			<br>
 			<section id="upload">
 				<div class="inner">
 					<header>

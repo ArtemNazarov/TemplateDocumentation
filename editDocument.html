@@ -1,12 +1,7 @@
 <!DOCTYPE HTML>
-<!--
-	Introspect by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
 <html>
 	<head>
-		<title>Introspect by TEMPLATED</title>
+		<title>Автоматизация обработки документов</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link href='https://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
@@ -26,9 +21,24 @@
 				</div>
 			</header>
 			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-			<section>
+			<section id="menuSection">
 				<div class="inner">
 					<nav class="panel">
+							<div class="dropdown">
+									<a class="button altMenu dropbtn" id="editMenu">Файл 
+										<i class="fa fa-caret-down"></i>
+									  </a>
+									  <div class="dropdown-content">
+										<a href="#"><i class="fa fa-file"></i> Создать</a>
+										<a href="#"><i class="fa fa-file-alt"></i> Открыть</a>
+										<a href="#"><i class="fa fa-clone"></i> Создать копию</a>
+										<a href="#"><i class="fa fa-save"></i>	 Скачать как</a>
+										<a href="#"><i class="fas fa-pen"></i> Переименовать</a>
+										<a href="#"><i class="fas fa-page"></i> Настройки страницы</a>
+										<a href="#"><i class="fa fa-print"></i> Печать</a>
+
+									  </div>							
+								</div>
 						<div class="dropdown">
 							<a class="button altMenu dropbtn" id="editMenu">Редактирование 
 								<i class="fa fa-caret-down"></i>
@@ -39,6 +49,8 @@
 								<a href="#"><i class="fa fa-cut"></i> Вырезать</a>
 								<a href="#"><i class="fa fa-copy"></i>	 Скопировать</a>
 								<a href="#"><i class="fa fa-paste"></i> Вставить</a>
+								<a href="#">Выделить всё</a>
+
 							  </div>							
 						</div>
 						<div class="dropdown">
@@ -46,9 +58,11 @@
 								<i class="fa fa-caret-down"></i>
 							  </a>
 							  <div class="dropdown-content">
-								<a href="#" ><i class="fa fa-image"></i>		 Изображение</a>
-								<a href="#"><i class="fa fa-table"></i>	 Таблица</a>
-								<a href="#"><i class="fa fa-chart-bar"></i>	Диаграмма</a>
+								<a href="#" ><i class="fa fa-image"></i> Изображение</a>
+								<a href="#"><i class="fa fa-table"></i> Таблица</a>
+								<a href="#"><i class="far fa-comment"></i> Примечание</a>
+								<a href="#"><i class="fa fa-link"></i> Гиперссылка</a>
+
 							  </div>
 						  </div> 
 						  <div class="dropdown">
@@ -56,7 +70,7 @@
 								<i class="fa fa-caret-down"></i>
 							  </a>
 							  <div class="dropdown-content">
-								<a href="#"><i class="fa fa-bold"></i> Жирный</a>
+								<a href="#"><i class="fas fa-bold"></i> Жирный</a>
 								<a href="#"><i class="fa fa-italic"></i> Курсив</a>
 								<a href="#"><i class="fa fa-underline"></i> Подчёркнутый</a>
 							  </div>
@@ -67,9 +81,10 @@
 								<i class="fa fa-caret-down"></i>
 							  </a>
 							  <div class="dropdown-content">
-								<a href="#">Link 1</a>
-								<a href="#">Link 2</a>
-								<a href="#">Link 3</a>
+								<a href="#"><i class="fa fa-search"></i> Масштаб</a>
+								<a href="#" id="showNavigation"><i class="fa fa-check"></i>Показать навигацию</a>
+								<a href="#" id="showComments"><i class="fa fa-check"></i>Показать примечания</a>
+								<a href="#" id="showTemplates"><i class="fa fa-check"></i>Показать шаблоны</a>
 							  </div>
 						  </div> 						  					  						  
 					</nav>
@@ -78,41 +93,75 @@
 			<section id="toolbarSection">
 				<div class="inner">
 					<nav class="panel">
-						<a class="button altMenu" href="#"><i class="fa fa-font"></i></a> 
+						<a class="button altMenu" href="#"><i class="fa fa-undo"></i></a>
+						<a class="button altMenu toolbarRightBorder" href="#"><i class="fa fa-redo"></i></a>
+						<a class="button altMenu " href="#"><i class="fa fa-cut"></i></a>
+						<a class="button altMenu" href="#"><i class="fa fa-copy"></i></a>
+						<a class="button altMenu toolbarRightBorder" href="#"><i class="fa fa-paste"></i></a>
+						<div class="dropdown">
+								<a class="button altMenu dropbtn toolbarRightBorder" id="fontFamilyButton"> 
+									Arial
+									<i class="fa fa-caret-down"></i>
+								  </a>
+								  <div class="dropdown-content">
+									<a href="#" class="fontFamily">Arial</a>
+									<a href="#" class="fontFamily">Calibri</a>
+									<a href="#" class="fontFamily">Courier New</a>
+									<a href="#" class="fontFamily">Impact</a>
+									<a href="#" class="fontFamily">Verdana</a>
+								  </div>
+							  </div> 
+						<div class="dropdown">
+									<a class="button altMenu dropbtn toolbarRightBorder" id="fontSizeButton"> 
+										12
+										<i class="fa fa-caret-down"></i>
+									  </a>
+									  <div class="dropdown-content toolbar-dropdown">
+										<a href="#" class="fontSize">8</a>
+										<a href="#" class="fontSize">9</a>
+										<a href="#" class="fontSize">10</a>
+										<a href="#" class="fontSize">11</a>
+										<a href="#" class="fontSize">12</a>
+										<a href="#" class="fontSize">14</a>
+										<a href="#" class="fontSize">16</a>
+										<a href="#" class="fontSize">18</a>
+										<a href="#" class="fontSize">20</a>
+										<a href="#" class="fontSize">24</a>
+										<a href="#" class="fontSize">26</a>
+										<a href="#" class="fontSize">28</a>
+										<a href="#" class="fontSize">36</a>
+										<a href="#" class="fontSize">48</a>
+										<a href="#" class="fontSize">72</a>
+									  </div>
+								  </div> 
 						<a class="button altMenu" href="#"><i class="fa fa-bold"></i></a> 
 						<a class="button altMenu" href="#"><i class="fa fa-italic"></i></a> 
-						<a class="button altMenu" href="#"><i class="fa fa-underline"></i></a>
-						<a class="button altMenu" href="#"><i class="fa fa-list-ol"></i></a> 
-						<a class="button altMenu" href="#"><i class="fa fa-list-ul"></i></a> 
-						<a class="button altMenu" href="#"><i class="fa fa-align-left"></i></a> 
-						<a class="button altMenu" href="#"><i class="fa fa-align-center"></i></a> 
-						<a class="button altMenu" href="#"><i class="fa fa-align-right"></i></a> 
-						<a class="button altMenu" href="#"><i class="fa fa-align-justify"></i></a> 
+						<a class="button altMenu toolbarRightBorder" href="#"><i class="fa fa-underline"></i></a>
+						<a class="button altMenu" href="#"><i class="fa fa-list-ol"></i> <i class="fa fa-caret-down"></i></a> 
+						<a class="button altMenu toolbarRightBorder" href="#"><i class="fa fa-list-ul"></i> <i class="fa fa-caret-down"></i></a> 
+						<a class="button altMenu " href="#"><i class="fas fa-align-left"></i></a> 
+						<a class="button altMenu" href="#"><i class="fas fa-align-center"></i></a> 
+						<a class="button altMenu" href="#"><i class="fas fa-align-right"></i></a> 
+						<a class="button altMenu toolbarRightBorder" href="#"><i class="fas fa-align-justify"></i></a> 
+						<a class="button altMenu" href="#"><i class="fas fa-text-height"></i></a> 
+						<a class="button altMenu toolbarRightBorder" href="#"><i class="fas fa-text-width"></i></a> 						
+						<a href="#" class="button altMenu"><i class="fas fa-outdent"></i></a>
+						<a href="#" class="button altMenu toolbarRightBorder"><i class="fas fa-indent"></i></a>
+						<a href="#" class="button altMenu"><i class="fa fa-table"></i></a>
 						<a class="button altMenu" href="#"><i class="fa fa-image"></i></a>
+						<a class="button altMenu" href="#"><i class="far fa-comment"></i></a>
+						<a class="button altMenu" href="#"><i class="fa fa-link"></i></a>
+						<input type="text" placeholder="Поиск..."  name="" id="searchField">
+						<a href="#" class="button altMenu"><i class="fa fa-search"></i></a>
 					</nav>
 				</div>
+
 			</section>
 			<section id="editSection">
 				<div class="inner">
-						<!-- <div>
-							<textarea name="" id="" cols="30" rows="10"></textarea>
-						</div>
-						<div>
-								<textarea name="" id="" cols="30" rows="10"></textarea>
-						</div>
-						<div>
-							<textarea name="" id="" cols="30" rows="10"></textarea>
-						</div>
-						<div>
-
-							<textarea name="" id="" cols="30" rows="10"></textarea>
-						</div>
-						<div>
-							<textarea name="" id="" cols="30" rows="10"></textarea>
-						</div> -->
-
 						<div id="documentNavigationBlock">
-								<h5>Структура документа</h5>
+								<h5>Структура документа <a href="#" id="closeNavigation" class="closeButton button altMenu" title="Закрыть структуру документа"><i class="fa fa-times"></i></a>
+								</h5>
 								<p></p>
 								<h3><a href="#">Блок 1</a></h3>
 								<h4><a href="#">Блок 1.1</a></h4>
@@ -124,31 +173,32 @@
 
 						</div>
 						<div id="textEditorBlock">
-								<!-- <code id="textEditor">
-								Lorem ipsum, dolor sit amet consectetur <span id="annOne">
-									adipisicing</span> elit. Error harum mollitia nesciunt reprehenderit perferendis culpa quae expedita molestiae fugiat magni eos nobis dolores, omnis molestias ad totam, ut repudiandae odit.
-								</code> -->
-								<textarea name="" id="textEditor" rows="15">Lorem, ipsum dolor sit amet consectetur  elit. 
-									Ea sit dolore sapiente autem veritatis tempore illo. Maxime similique, sint amet quod eos consectetur. Facere officiis, obcaecati dolorum placeat accusantium aperiam.
+								<textarea name="" id="textEditor" rows="15">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eum cumque, ipsum suscipit veritatis, ea nihil exercitationem corrupti fugit placeat vel harum, in facere a! Voluptas voluptates sit animi id.Ducimus pariatur itaque aspernatur voluptatum ipsum laudantium, et consectetur ab neque repellat? Voluptates laborum architecto aliquam cum eveniet quasi unde sunt minus consequatur quia obcaecati, quam adipisci temporibus quaerat dignissimos.
 								</textarea>
 						</div>
-						<div id="annotationBlock">
-								<h5>Примечания</h5>
-								<p>Примечание 1</p>
+						<div id="commentsBlock">
+								<h5>Примечания <a href="#" id="closeComments" class="closeButton button altMenu" title="Закрыть структуру документа"><i class="fa fa-times"></i></a>
+								</h5>
+								<p class="annotation">Примечание 1</p>
 								<br>
 								<br>
 								<br>
-								<p>Примечание 2</p>
-								<p>Примечание 3</p>
-								<p>Примечание 4</p>
-								<p>Примечание 5</p>
+								<p class="annotation">Примечание 2</p>
+								<br>
+								<br>
+								<p class="annotation">Примечание 3</p>
+								<p class="annotation">Примечание 4</p>
+								<br>
+								<br>
+								<p class="annotation">Примечание 5</p>
 
 						</div>
 						<div id="templateBlock">
-									<h5 id="templateTitle">Шаблоны</h5>
+									<h5 id="templateTitle">Шаблоны <a href="#" class="closeButton button altMenu" id="closeTemplates" title="Закрыть список шаблонов"><i class="fa fa-times"></i></a>
+									</h5>
 									<p></p>
-									<h4><a href="#" class="button altMenu">Шаблон 1</a></h4>
-									<h4><a href="#" class="button altMenu">Шаблон 2</a></h4>
+									<h5><a href="#" class="button altMenu">Шаблон 1</a></h5>
+									<h5><a href="#" class="button altMenu">Шаблон 2</a></h5>
 	
 							</div>
 				</div>

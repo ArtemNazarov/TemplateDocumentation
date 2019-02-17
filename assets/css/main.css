@@ -1851,7 +1851,7 @@
 		border: 0;
 		cursor: pointer;
 		display: inline-block;
-		font-size: .8em;
+		font-size: .9em;
 		font-weight: 700;
 		height: 3.5em;
 		line-height: 3.65em;
@@ -3094,82 +3094,25 @@
 
 		}
 
-	#three {
-		padding: 6em 0 4em 0;
-	}
-
-		#three .inner {
-			display: -ms-flexbox;
-			display: -moz-flex;
-			display: -webkit-flex;
-			display: -ms-flex;
-			display: flex;
-			-moz-flex-direction: row;
-			-webkit-flex-direction: row;
-			-ms-flex-direction: row;
-			flex-direction: row;
-			-moz-justify-content: space-between;
-			-webkit-justify-content: space-between;
-			-ms-justify-content: space-between;
-			justify-content: space-between;
-			-ms-flex-pack: justify;
-		}
-
-			#three .inner article {
-				width: 26%;
-				display: block;
-			}
-
-				#three .inner article p {
-					color: #717171;
-				}
-
-				#three .inner article .icon {
-					color: #b3b3b3;
-					font-size: 3em;
-				}
-
-			@media screen and (max-width: 980px) {
-
-				#three .inner {
-					-moz-flex-direction: column;
-					-webkit-flex-direction: column;
-					-ms-flex-direction: column;
-					flex-direction: column;
-				}
-
-					#three .inner article {
-						width: 100%;
-						margin: 0 auto;
-					}
-
-			}
-
-		@media screen and (max-width: 980px) {
-
-			#three {
-				padding: 4em 0 2em 0;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#three {
-				padding: 2em 0 0.1em 0;
-			}
-
-		}
-
 .active {
 	background: #475B79;
 	color: white;
 }
 
-/* Dropdown */
-  
-  
-  
+
+
+#searchField {
+	height: 2em;
+	width: 5em;
+	padding: .6em;
+	display: inline;
+}
+
+#searchBlock input {
+	display: inline;
+}
+
+/* Dropdown */  
   /* Dropdown content (hidden by default) */
   .dropdown-content {
     display: none;
@@ -3189,7 +3132,7 @@
   .dropdown-content a {
     float: none;
     color: black;
-    padding: 12px 16px;
+    padding: 0.5em 0.9em;
     text-decoration: none;
     display: block;
     text-align: left;
@@ -3227,6 +3170,15 @@
 	padding-top: 2em;
 }
 
+#editSection .inner .altMenu {
+	height: 2.5em;
+	line-height: 2.5em;
+	padding-left: 0.8em;
+	padding-right: 0.8em;
+	margin: 0;
+}
+
+
   #documentNavigationBlock {
 	flex: 1 1 auto;	
 	margin: 0 1em;
@@ -3252,7 +3204,7 @@
   }
 
   #templateTitle{ 
-		padding: 0 2.25em;
+		padding: 0 1em;
 	}
 
 #annotationBlock {
@@ -3260,9 +3212,14 @@
 	margin: 0 1em;
 }
 
-#annotationBlock p {
-	border: 1px solid aquamarine;
+.annotation {
+	padding: 0.8em;
+	border: 2px solid #475B79;
 	border-radius: 20px;
+}
+
+.closeButton {
+	padding: .4em !important; 
 }
 
 #toolbarSection .inner {
@@ -3275,11 +3232,18 @@
 	-webkit-flex-direction: row;
 	-ms-flex-direction: row;
 	flex-direction: row;
-	/* justify-content: center */
 }
 
-#toolbarSection .inner a.altMenu {
-	padding: 0.8em;
+#toolbarSection .inner .altMenu {
+	height: 2.5em;
+	line-height: 2.5em;
+	padding-left: 0.8em;
+	padding-right: 0.8em;
+	margin-top: .8em;
+}
+
+.toolbarRightBorder {
+	border-right: 1px solid black;
 }
 
 
@@ -3294,4 +3258,11 @@
 #annOne {
 	background-color: green;
 }
+
+#footer * {
+	margin: 0.5em auto;
+	text-align: right;
+}
+
+
 
