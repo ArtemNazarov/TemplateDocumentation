@@ -3,9 +3,12 @@
 (function(){
 
 
-    document.querySelector('#closeNavigation').addEventListener('click', function(){
-        closeNavigation();
-    });
+    let closeNavButton = document.querySelector('#closeNavigation');
+    if (closeNavButton !== null) {
+        closeNavButton.addEventListener('click', function(){
+            closeNavigation();
+        });
+    }
 
     function closeNavigation(){
         let navDiv = document.querySelector('#documentNavigationBlock');
@@ -15,9 +18,12 @@
         navMenuItem.innerHTML = 'Показать навигацию';
     }
 
-    document.querySelector('#closeComments').addEventListener('click', function(){
-        closeComments();
-    });
+    let closeCommButton = document.querySelector('#closeComments');
+    if (closeCommButton !== null) {
+        closeCommButton.addEventListener('click', function(){
+            closeComments();
+        });
+    }
 
     function closeComments(){
         let comDiv = document.querySelector('#commentsBlock');
@@ -27,9 +33,12 @@
         comMenuItem.innerHTML = 'Показать примечания';
     }
 
-    document.querySelector('#closeTemplates').addEventListener('click', function(){
-        closeTemplates();
-    });
+    let closeTemplButton = document.querySelector('#closeTemplates');
+    if (closeTemplButton !== null) {
+        closeTemplButton.addEventListener('click', function(){
+            closeTemplates();
+        });
+    }
 
     function closeTemplates(){
         let tmpDiv = document.querySelector('#templateBlock');
@@ -80,7 +89,6 @@
         let innerSize = elemSize.innerHTML + ' <i class="fa fa-caret-down"></i>';
         elemSize.addEventListener('click', function() {
             let size = document.querySelector('#fontSizeButton');
-            console.log(size);
             size.innerHTML = innerSize;
         });
     }
@@ -91,7 +99,6 @@
         let innerFamily = elemFamily.innerHTML + ' <i class="fa fa-caret-down"></i>';
         elemFamily.addEventListener('click', function() {
             let family = document.querySelector('#fontFamilyButton');
-            console.log(family);
             family.innerHTML = innerFamily;
         });
     }    
