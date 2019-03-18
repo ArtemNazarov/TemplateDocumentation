@@ -2,6 +2,13 @@
 
 (function(){
 
+    let textEditor = document.getElementById('textEditor');
+    textEditor.addEventListener('focus', function(){
+        textEditor.classList.add('editorFocus');
+    });
+    textEditor.addEventListener('blur', function(){
+        textEditor.classList.remove('editorFocus');
+    });
 
     let closeNavButton = document.querySelector('#closeNavigation');
     if (closeNavButton !== null) {

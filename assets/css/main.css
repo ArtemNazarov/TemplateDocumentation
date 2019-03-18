@@ -3194,9 +3194,18 @@
 }
 
   #textEditor {
-	  resize: none;
 	  height: 70em; 
 	   padding: 3em 5em;
+	border-radius: 0;
+	   border: solid 1.5px #9b9b9b;
+	   border-color: #9b9b9b;
+	   color: inherit;
+	   display: block;
+  }
+
+  .editorFocus {
+	border-color: #475B79 !important;
+	outline: 0;
   }
 
   #templateBlock {
@@ -3264,5 +3273,7 @@
 	text-align: right;
 }
 
-
+.marker {
+	background-color: red;
+}
 
